@@ -4,11 +4,12 @@
 
 int main()
 {
-   Client* cli =  new Client("ip-api.com","/json/");
-   
-   std::string resp =  cli->GetResponce("google.com");
 
-   std::cout << resp << std::endl;
+    auto cli =  new Client("ip-api.com","/json/");
+   
+    auto resp =  cli->GetResponce("google.com");
+
+    std::cout << resp << std::endl;
 
     system("pause");
 }
